@@ -1,0 +1,191 @@
+2019-10-24 22:10:22 INFO  - Initializing Atlas logger for 'com.ensoftcorp.atlas.core.3.5.0.201909161748'
+2019-10-24 22:10:22 INFO  - Logging level: RELEASE
+2019-10-24 22:10:22 INFO  - EnSoft Plugins: com.ensoftcorp.abp.3.5.0.201909161748,com.ensoftcorp.abp.common.3.5.0.201909161748,com.ensoftcorp.atlas.c.core.3.5.0.201909161748,com.ensoftcorp.atlas.c.ui.3.5.0.201909161748,com.ensoftcorp.atlas.core.3.5.0.201909161748,com.ensoftcorp.atlas.epl.3.5.0.201909161748,com.ensoftcorp.atlas.java.core.3.5.0.201909161748,com.ensoftcorp.atlas.java.help.3.5.0.201909161748,com.ensoftcorp.atlas.java.ui.3.5.0.201909161748,com.ensoftcorp.atlas.scala-lang.3.5.0.201909161748,com.ensoftcorp.atlas.ui.3.5.0.201909161748,com.ensoftcorp.atlas.ui.shell.3.5.0.201909161748,com.ensoftcorp.atlas.version.jre.3.5.0.201909161748
+2019-10-24 22:10:22 INFO  - Free|Total|Max memory: 77.62 MB|256.0 MB|1024.0 MB (30% free)
+2019-10-24 22:10:22 INFO  - 
+****** System environment: ******
+APP_ICON_10806=../Resources/Eclipse.icns
+DISPLAY=/private/tmp/com.apple.launchd.tiC477Y3Ow/org.macosforge.xquartz:0
+HOME=/Users/liqiwei
+JAVA_STARTED_ON_FIRST_THREAD_10806=1
+LOGNAME=liqiwei
+PATH=/usr/bin:/bin:/usr/sbin:/sbin
+SHELL=/bin/bash
+SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.WZEekk1kYK/Listeners
+TMPDIR=/var/folders/v2/4y0rpykx3wg8qkg6lql1ml0c0000gn/T/
+USER=liqiwei
+XPC_FLAGS=0x0
+XPC_SERVICE_NAME=org.eclipse.platform.ide.7192
+__CF_USER_TEXT_ENCODING=0x1F5:0x19:0x34
+****** (end System environment) ******
+
+2019-10-24 22:10:22 INFO  - 
+****** System properties: ******
+applicationXMI=org.eclipse.ui.workbench/LegacyIDE.e4xmi
+awt.toolkit=sun.lwawt.macosx.LWCToolkit
+ds.delayed.keepInstances=true
+ds.delayed.keepInstances.default=true
+eclipse.application=org.eclipse.ui.ide.workbench
+eclipse.buildId=4.13.0.I20190916-1045
+eclipse.commands=-os
+macosx
+-ws
+cocoa
+-arch
+x86_64
+-showsplash
+-launcher
+/Users/liqiwei/eclipse/jee-2019-09/Eclipse.app/Contents/MacOS/eclipse
+-name
+Eclipse
+--launcher.library
+/Users/liqiwei/.p2/pool/plugins/org.eclipse.equinox.launcher.cocoa.macosx.x86_64_1.1.1100.v20190907-0426/eclipse_1902.so
+-startup
+/Users/liqiwei/eclipse/jee-2019-09/Eclipse.app/Contents/MacOS//../Eclipse/plugins/org.eclipse.equinox.launcher_1.5.500.v20190715-1310.jar
+--launcher.appendVmargs
+-product
+org.eclipse.epp.package.jee.product
+-keyring
+/Users/liqiwei/.eclipse_keyring
+-vm
+/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/bin/../jre/lib/server/libjvm.dylib
+
+eclipse.home.location=file:/Users/liqiwei/eclipse/jee-2019-09/Eclipse.app/Contents/Eclipse/
+eclipse.launcher=/Users/liqiwei/eclipse/jee-2019-09/Eclipse.app/Contents/MacOS/eclipse
+eclipse.launcher.name=Eclipse
+eclipse.p2.data.area=file:/Users/liqiwei/.p2/
+eclipse.p2.max.threads=10
+eclipse.p2.profile=_Users_liqiwei_eclipse_jee-2019-09_Eclipse.app_Contents_Eclipse
+eclipse.product=org.eclipse.epp.package.jee.product
+eclipse.startTime=1571972984349
+eclipse.stateSaveDelayInterval=30000
+eclipse.vm=/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/bin/../jre/lib/server/libjvm.dylib
+eclipse.vmargs=-Dosgi.requiredJavaVersion=1.8
+-Dosgi.instance.area.default=@user.home/eclipse-workspace
+-XX:+UseG1GC
+-XX:+UseStringDeduplication
+-XstartOnFirstThread
+-Dorg.eclipse.swt.internal.carbon.smallFonts
+-Dosgi.requiredJavaVersion=1.8
+-Dosgi.dataAreaRequiresExplicitInit=true
+-Xms256m
+-Xmx1024m
+-Xdock:icon=../Resources/Eclipse.icns
+-XstartOnFirstThread
+-Dorg.eclipse.swt.internal.carbon.smallFonts
+-Declipse.p2.max.threads=10
+-Doomph.update.url=http://download.eclipse.org/oomph/updates/milestone/latest
+-Doomph.redirection.index.redirection=index:/->http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/
+-Djava.class.path=/Users/liqiwei/eclipse/jee-2019-09/Eclipse.app/Contents/MacOS//../Eclipse/plugins/org.eclipse.equinox.launcher_1.5.500.v20190715-1310.jar
+
+equinox.init.uuid=true
+file.encoding=UTF-8
+file.encoding.pkg=sun.io
+file.separator=/
+ftp.nonProxyHosts=local|*.local|169.254/16|*.169.254/16
+gopherProxySet=false
+gosh.args=--nointeractive
+java.awt.graphicsenv=sun.awt.CGraphicsEnvironment
+java.awt.printerjob=sun.lwawt.macosx.CPrinterJob
+java.class.path=/Users/liqiwei/eclipse/jee-2019-09/Eclipse.app/Contents/MacOS//../Eclipse/plugins/org.eclipse.equinox.launcher_1.5.500.v20190715-1310.jar
+java.class.version=52.0
+java.endorsed.dirs=/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre/lib/endorsed
+java.ext.dirs=/Users/liqiwei/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre
+java.io.tmpdir=/var/folders/v2/4y0rpykx3wg8qkg6lql1ml0c0000gn/T/
+java.library.path=/Users/liqiwei/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+java.runtime.name=Java(TM) SE Runtime Environment
+java.runtime.version=1.8.0_221-b11
+java.specification.name=Java Platform API Specification
+java.specification.vendor=Oracle Corporation
+java.specification.version=1.8
+java.vendor=Oracle Corporation
+java.vendor.url=http://java.oracle.com/
+java.vendor.url.bug=http://bugreport.sun.com/bugreport/
+java.version=1.8.0_221
+java.vm.info=mixed mode
+java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+java.vm.specification.name=Java Virtual Machine Specification
+java.vm.specification.vendor=Oracle Corporation
+java.vm.specification.version=1.8
+java.vm.vendor=Oracle Corporation
+java.vm.version=25.221-b11
+line.separator=
+
+oomph.redirection.index.redirection=index:/->http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/
+oomph.update.url=http://download.eclipse.org/oomph/updates/milestone/latest
+org.apache.commons.logging.Log=org.apache.commons.logging.impl.NoOpLog
+org.eclipse.equinox.launcher.splash.handle=140272890907104
+org.eclipse.equinox.launcher.splash.location=/Users/liqiwei/.p2/pool/plugins/org.eclipse.platform_4.13.0.v20190916-1045/splash.bmp
+org.eclipse.equinox.simpleconfigurator.configUrl=file:org.eclipse.equinox.simpleconfigurator/bundles.info
+org.eclipse.m2e.log.dir=/Users/liqiwei/Documents/SE421/.metadata/.plugins/org.eclipse.m2e.logback.configuration
+org.eclipse.swt.internal.carbon.smallFonts=
+org.eclipse.swt.internal.deviceZoom=200
+org.osgi.framework.executionenvironment=OSGi/Minimum-1.0,OSGi/Minimum-1.1,OSGi/Minimum-1.2,JavaSE/compact1-1.8,JavaSE/compact2-1.8,JavaSE/compact3-1.8,JRE-1.1,J2SE-1.2,J2SE-1.3,J2SE-1.4,J2SE-1.5,JavaSE-1.6,JavaSE-1.7,JavaSE-1.8
+org.osgi.framework.language=zh
+org.osgi.framework.os.name=MacOSX
+org.osgi.framework.os.version=10.15.0
+org.osgi.framework.processor=x86-64
+org.osgi.framework.storage=/Users/liqiwei/eclipse/jee-2019-09/Eclipse.app/Contents/Eclipse/configuration
+org.osgi.framework.system.capabilities=osgi.ee; osgi.ee="OSGi/Minimum"; version:List<Version>="1.0, 1.1, 1.2",osgi.ee; osgi.ee="JRE"; version:List<Version>="1.0, 1.1",osgi.ee; osgi.ee="JavaSE"; version:List<Version>="1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8",osgi.ee; osgi.ee="JavaSE/compact1"; version:List<Version>="1.8",osgi.ee; osgi.ee="JavaSE/compact2"; version:List<Version>="1.8",osgi.ee; osgi.ee="JavaSE/compact3"; version:List<Version>="1.8"
+org.osgi.framework.system.packages=java.applet,java.awt,java.awt.color,java.awt.datatransfer,java.awt.dnd,java.awt.event,java.awt.font,java.awt.geom,java.awt.im,java.awt.im.spi,java.awt.image,java.awt.image.renderable,java.awt.print,java.beans,java.beans.beancontext,java.io,java.lang,java.lang.annotation,java.lang.instrument,java.lang.invoke,java.lang.management,java.lang.ref,java.lang.reflect,java.math,java.net,java.nio,java.nio.channels,java.nio.channels.spi,java.nio.charset,java.nio.charset.spi,java.nio.file,java.nio.file.attribute,java.nio.file.spi,java.rmi,java.rmi.activation,java.rmi.dgc,java.rmi.registry,java.rmi.server,java.security,java.security.acl,java.security.cert,java.security.interfaces,java.security.spec,java.sql,java.text,java.text.spi,java.time,java.time.chrono,java.time.format,java.time.temporal,java.time.zone,java.util,java.util.concurrent,java.util.concurrent.atomic,java.util.concurrent.locks,java.util.function,java.util.jar,java.util.logging,java.util.prefs,java.util.regex,java.util.spi,java.util.stream,java.util.zip,javax.accessibility,javax.activation,javax.activity,javax.annotation,javax.annotation.processing,javax.crypto,javax.crypto.interfaces,javax.crypto.spec,javax.imageio,javax.imageio.event,javax.imageio.metadata,javax.imageio.plugins.bmp,javax.imageio.plugins.jpeg,javax.imageio.spi,javax.imageio.stream,javax.jws,javax.jws.soap,javax.lang.model,javax.lang.model.element,javax.lang.model.type,javax.lang.model.util,javax.management,javax.management.loading,javax.management.modelmbean,javax.management.monitor,javax.management.openmbean,javax.management.relation,javax.management.remote,javax.management.remote.rmi,javax.management.timer,javax.naming,javax.naming.directory,javax.naming.event,javax.naming.ldap,javax.naming.spi,javax.net,javax.net.ssl,javax.print,javax.print.attribute,javax.print.attribute.standard,javax.print.event,javax.rmi,javax.rmi.CORBA,javax.rmi.ssl,javax.script,javax.security.auth,javax.security.auth.callback,javax.security.auth.kerberos,javax.security.auth.login,javax.security.auth.spi,javax.security.auth.x500,javax.security.cert,javax.security.sasl,javax.sound.midi,javax.sound.midi.spi,javax.sound.sampled,javax.sound.sampled.spi,javax.sql,javax.sql.rowset,javax.sql.rowset.serial,javax.sql.rowset.spi,javax.swing,javax.swing.border,javax.swing.colorchooser,javax.swing.event,javax.swing.filechooser,javax.swing.plaf,javax.swing.plaf.basic,javax.swing.plaf.metal,javax.swing.plaf.multi,javax.swing.plaf.nimbus,javax.swing.plaf.synth,javax.swing.table,javax.swing.text,javax.swing.text.html,javax.swing.text.html.parser,javax.swing.text.rtf,javax.swing.tree,javax.swing.undo,javax.tools,javax.transaction,javax.transaction.xa,javax.xml,javax.xml.bind,javax.xml.bind.annotation,javax.xml.bind.annotation.adapters,javax.xml.bind.attachment,javax.xml.bind.helpers,javax.xml.bind.util,javax.xml.crypto,javax.xml.crypto.dom,javax.xml.crypto.dsig,javax.xml.crypto.dsig.dom,javax.xml.crypto.dsig.keyinfo,javax.xml.crypto.dsig.spec,javax.xml.datatype,javax.xml.namespace,javax.xml.parsers,javax.xml.soap,javax.xml.stream,javax.xml.stream.events,javax.xml.stream.util,javax.xml.transform,javax.xml.transform.dom,javax.xml.transform.sax,javax.xml.transform.stax,javax.xml.transform.stream,javax.xml.validation,javax.xml.ws,javax.xml.ws.handler,javax.xml.ws.handler.soap,javax.xml.ws.http,javax.xml.ws.soap,javax.xml.ws.spi,javax.xml.ws.spi.http,javax.xml.ws.wsaddressing,javax.xml.xpath,org.ietf.jgss,org.omg.CORBA,org.omg.CORBA_2_3,org.omg.CORBA_2_3.portable,org.omg.CORBA.DynAnyPackage,org.omg.CORBA.ORBPackage,org.omg.CORBA.portable,org.omg.CORBA.TypeCodePackage,org.omg.CosNaming,org.omg.CosNaming.NamingContextExtPackage,org.omg.CosNaming.NamingContextPackage,org.omg.Dynamic,org.omg.DynamicAny,org.omg.DynamicAny.DynAnyFactoryPackage,org.omg.DynamicAny.DynAnyPackage,org.omg.IOP,org.omg.IOP.CodecFactoryPackage,org.omg.IOP.CodecPackage,org.omg.Messaging,org.omg.PortableInterceptor,org.omg.PortableInterceptor.ORBInitInfoPackage,org.omg.PortableServer,org.omg.PortableServer.CurrentPackage,org.omg.PortableServer.POAManagerPackage,org.omg.PortableServer.POAPackage,org.omg.PortableServer.portable,org.omg.PortableServer.ServantLocatorPackage,org.omg.SendingContext,org.omg.stub.java.rmi,org.w3c.dom,org.w3c.dom.bootstrap,org.w3c.dom.css,org.w3c.dom.events,org.w3c.dom.html,org.w3c.dom.ls,org.w3c.dom.ranges,org.w3c.dom.stylesheets,org.w3c.dom.traversal,org.w3c.dom.views,org.w3c.dom.xpath,org.xml.sax,org.xml.sax.ext,org.xml.sax.helpers
+org.osgi.framework.uuid=a309d74d-1843-4b97-93ea-490068bdf36a
+org.osgi.framework.vendor=Eclipse
+org.osgi.framework.version=1.9.0
+org.osgi.supports.framework.extension=true
+org.osgi.supports.framework.fragment=true
+org.osgi.supports.framework.requirebundle=true
+os.arch=x86_64
+os.name=Mac OS X
+os.version=10.15
+osgi.arch=x86_64
+osgi.bundles=reference:file:org.eclipse.osgi.compatibility.state_1.1.600.v20190814-1451.jar,reference:file:org.eclipse.equinox.simpleconfigurator_1.3.300.v20190716-0825.jar@1:start
+osgi.bundles.defaultStartLevel=4
+osgi.compatibility.bootdelegation=true
+osgi.compatibility.bootdelegation.default=true
+osgi.configuration.area=file:/Users/liqiwei/eclipse/jee-2019-09/Eclipse.app/Contents/Eclipse/configuration/
+osgi.configuration.cascaded=false
+osgi.dataAreaRequiresExplicitInit=true
+osgi.framework=file:/Users/liqiwei/.p2/pool/plugins/org.eclipse.osgi_3.15.0.v20190830-1434.jar
+osgi.framework.extensions=reference:file:org.eclipse.osgi.compatibility.state_1.1.600.v20190814-1451.jar
+osgi.framework.shape=jar
+osgi.framework.useSystemProperties=true
+osgi.frameworkClassPath=., file:/Users/liqiwei/.p2/pool/plugins/org.eclipse.osgi.compatibility.state_1.1.600.v20190814-1451.jar
+osgi.install.area=file:/Users/liqiwei/eclipse/jee-2019-09/Eclipse.app/Contents/Eclipse/
+osgi.instance.area=file:/Users/liqiwei/Documents/SE421/
+osgi.instance.area.default=file:/Users/liqiwei/eclipse-workspace/
+osgi.logfile=/Users/liqiwei/Documents/SE421/.metadata/.log
+osgi.nl=zh_CN
+osgi.os=macosx
+osgi.requiredJavaVersion=1.8
+osgi.splashLocation=/Users/liqiwei/.p2/pool/plugins/org.eclipse.platform_4.13.0.v20190916-1045/splash.bmp
+osgi.splashPath=file:/Users/liqiwei/.p2/pool/plugins/org.eclipse.platform_4.13.0.v20190916-1045
+osgi.syspath=/Users/liqiwei/.p2/pool/plugins
+osgi.tracefile=/Users/liqiwei/Documents/SE421/.metadata/trace.log
+osgi.ws=cocoa
+path.separator=:
+socksNonProxyHosts=local|*.local|169.254/16|*.169.254/16
+sun.arch.data.model=64
+sun.boot.class.path=/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre/classes
+sun.boot.library.path=/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre/lib
+sun.cpu.endian=little
+sun.cpu.isalist=
+sun.io.unicode.encoding=UnicodeBig
+sun.jnu.encoding=UTF-8
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+sun.os.patch.level=unknown
+user.country=CN
+user.country.format=US
+user.dir=/Users/liqiwei/eclipse/jee-2019-09/Eclipse.app/Contents/MacOS
+user.home=/Users/liqiwei
+user.language=zh
+user.language.format=en
+user.name=liqiwei
+user.timezone=America/Chicago
+****** (end System properties) ******
+
+2019-10-24 22:10:22 INFO  - AtlasCommands: DISABLE_NATIVE_MEMORY = false,BUNDLE_DISTRO = false
+2019-10-24 22:10:22 DEBUG - DEBUG - Atlas Started
+2019-10-24 22:10:23 INFO  - Auto-Loading Index schedule
+2019-10-24 22:10:23 INFO  - Auto-Loading Index start
+2019-10-24 22:10:23 INFO  - Auto-Loading Index complete
