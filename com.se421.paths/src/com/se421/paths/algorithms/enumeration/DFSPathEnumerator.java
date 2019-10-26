@@ -2,14 +2,17 @@ package com.se421.paths.algorithms.enumeration;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Stack;
 
 import com.ensoftcorp.atlas.core.db.graph.Edge;
 import com.ensoftcorp.atlas.core.db.graph.Node;
 import com.ensoftcorp.atlas.core.db.set.AtlasSet;
+import com.ensoftcorp.atlas.core.log.Log;
 import com.ensoftcorp.atlas.core.query.Q;
 import com.ensoftcorp.atlas.core.script.Common;
 import com.ensoftcorp.atlas.core.xcsg.XCSG;
 import com.se421.paths.algorithms.PathEnumerator;
+import com.se421.paths.algorithms.PathCounter.CountingResult;
 import com.se421.paths.transforms.DAGTransform;
 
 /**
@@ -44,10 +47,12 @@ public class DFSPathEnumerator extends PathEnumerator {
 	 * Enumerates each path in the given CFG and returns each
 	 * path as a list of line numbers.
 	 */
+	@SuppressWarnings("unchecked")
 	@Override
 	public EnumerationResult enumeratePaths(Q cfg) {
 		// the total number of paths discovered
 		List<List<Long>> paths = new ArrayList<List<Long>>();
+		ArrayList<Long> subPaths = new ArrayList<Long>();
 		long additions = 0L;
 		
 		// create a directed acyclic graph (DAG)
@@ -58,7 +63,47 @@ public class DFSPathEnumerator extends PathEnumerator {
 		AtlasSet<Node> dagLeaves = dag.leaves().eval().nodes();
 		Node dagRoot = dag.roots().eval().nodes().one();
 
-		// TODO: implement
+		// handle some trivial edge cases
+		if(dagRoot == null) {
+			// function is empty, there are no paths
+			return new EnumerationResult(new CountingResult(paths.size(), paths.size()), paths);
+		} else if(dagLeaves.contains(dagRoot)) {
+			// function contains a single node there must be 1 path
+			return new EnumerationResult(new CountingResult(paths.size(), paths.size()), paths);
+		}
+
+		// stack for depth first search (DFS)
+		Stack<Node> stack = new Stack<Node>();
+
+		// start searching from the root
+		stack.push(dagRoot);
+		
+
+		// depth first search on directed acyclic graph
+		while (!stack.isEmpty()) {
+			// next node to process
+			Node currentNode = stack.pop();
+			
+			// get the children of the current node
+			// note: we iterate by edge in case there are multiple edges from a predecessor to a successor
+			for (Edge outgoingEdge : dag.forwardStep(Common.toQ(currentNode)).eval().edges()) {
+				Node successor = outgoingEdge.to();
+				long lineNum = this.getLineNumber(successor);
+				subPaths.add(lineNum);
+				if(dagLeaves.contains(successor)) {
+					// if we reached a leaf increment the counter by 1
+					paths.add((List<Long>) subPaths.clone());
+					Log.info(subPaths.toString());
+					additions++;
+					subPaths.remove(subPaths.size() -  1);
+				} else {
+					// push the child node on the stack to be processed
+					stack.push(successor);
+					
+				}
+			}
+			
+		}
 
 		// note that the size of paths is practically restricted to integer range, 
 		// but this algorithm will exhaust memory long before it reaches the max range
