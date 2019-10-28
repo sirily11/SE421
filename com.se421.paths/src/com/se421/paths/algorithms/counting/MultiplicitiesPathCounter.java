@@ -10,6 +10,7 @@ import com.ensoftcorp.atlas.core.log.Log;
 import com.ensoftcorp.atlas.core.query.Q;
 import com.ensoftcorp.atlas.core.script.Common;
 import com.se421.paths.algorithms.PathCounter;
+import com.se421.paths.algorithms.PathCounter.CountingResult;
 import com.se421.paths.transforms.DAGTransform;
 
 /**
@@ -42,12 +43,22 @@ public class MultiplicitiesPathCounter extends PathCounter {
 		
 		HashMap<Node, Long> multiplicities = new HashMap<Node, Long>();
 		HashMap<Node, Long> triggers = new HashMap<Node, Long>();
+		
 		// create a directed acyclic graph (DAG)
 		DAGTransform transformer = new DAGTransform();
 		Q dag = transformer.transform(cfg);
 		// the roots and leaves of the DAG
 		AtlasSet<Node> dagLeaves = dag.leaves().eval().nodes();
 		Node dagRoot = dag.roots().eval().nodes().one();
+		// handle some trivial edge cases
+		if(dagRoot == null) {
+			// function is empty, there are no paths
+			return new CountingResult(0L,0L);
+		} else if(dagLeaves.contains(dagRoot)) {
+			// function contains a single node there must be 1 path
+			return new CountingResult(0L,1L);
+		}
+
 
 		Stack<Node> stack = new Stack<Node>();
 
