@@ -18,7 +18,19 @@ var cfgdwrite = cfg(dswrite)
 var enumerator = new DFSPathEnumerator
 enumerator.enumeratePaths(cfgdwrite)
 
+var dskenq = functions("dskenq")
+var dskenqCFG = cfg(dskenq)
+var enumerator = new DFSPathEnumerator
+enumerator.enumeratePaths(dskenqCFG)
+
+
 var dskqopt = functions("dskqopt")
 var dskqoptCFG = cfg(dskqopt)
 var enumerator = new DFSPathEnumerator
 enumerator.enumeratePaths(dskqoptCFG)
+
+
+var dswrite = functions("write")
+var cfgdwrite = cfg(dswrite)
+var enumerator = new DFSPathEnumerator
+enumerator.enumeratePaths(cfgdwrite)

@@ -83,6 +83,7 @@ public class DFSPathEnumerator extends PathEnumerator {
 		for(Edge outgoingEdge: dag.forwardStep(Common.toQ(dagRoot)).eval().edges()) {
 			edges.push(outgoingEdge);
 		}
+		subPaths.add(this.getLineNumber(dagRoot));
 		
 		
 		while(!edges.isEmpty()) {
@@ -103,6 +104,7 @@ public class DFSPathEnumerator extends PathEnumerator {
 			}
 			
 		}
+		Log.info(paths.toString());
 		
 		// note that the size of paths is practically restricted to integer range, 
 		// but this algorithm will exhaust memory long before it reaches the max range

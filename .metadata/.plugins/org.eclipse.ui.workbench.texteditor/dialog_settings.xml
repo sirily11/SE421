@@ -6,8 +6,9 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="Log"/>
+		<item key="selection" value="subPaths"/>
 		<list key="findhistory">
+			<item value="subPaths"/>
 			<item value="Log"/>
 		</list>
 		<list key="replacehistory">
