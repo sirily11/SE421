@@ -74,37 +74,36 @@ public class DFSPathEnumerator extends PathEnumerator {
 
 		// stack for depth first search (DFS)
 		Stack<Node> stack = new Stack<Node>();
+		
+		Stack<Edge> edges = new Stack();
 
 		// start searching from the root
 		stack.push(dagRoot);
+		// pushing all the edges into the stack
+		for(Edge outgoingEdge: dag.forwardStep(Common.toQ(dagRoot)).eval().edges()) {
+			edges.push(outgoingEdge);
+		}
 		
-
-		// depth first search on directed acyclic graph
-		while (!stack.isEmpty()) {
-			// next node to process
-			Node currentNode = stack.pop();
-			
-			// get the children of the current node
-			// note: we iterate by edge in case there are multiple edges from a predecessor to a successor
-			for (Edge outgoingEdge : dag.forwardStep(Common.toQ(currentNode)).eval().edges()) {
-				Node successor = outgoingEdge.to();
-				long lineNum = this.getLineNumber(successor);
-				subPaths.add(lineNum);
-				if(dagLeaves.contains(successor)) {
-					// if we reached a leaf increment the counter by 1
-					paths.add((List<Long>) subPaths.clone());
-					Log.info(subPaths.toString());
-					additions++;
-					subPaths.remove(subPaths.size() -  1);
-				} else {
-					// push the child node on the stack to be processed
-					stack.push(successor);
-					
+		
+		while(!edges.isEmpty()) {
+			Edge edge = edges.pop();
+			Node node = edge.to();
+			long lineNum = this.getLineNumber(node);
+			subPaths.add(lineNum);
+			// If leaves
+			if(dagLeaves.contains(node)) {
+				additions ++;
+				paths.add((List<Long>) subPaths.clone());
+				subPaths.remove(lineNum);
+			} else {
+				for(Edge e : dag.forwardStep(Common.toQ(node)).eval().edges()) {
+					edges.push(e); 
 				}
+				
 			}
 			
 		}
-
+		
 		// note that the size of paths is practically restricted to integer range, 
 		// but this algorithm will exhaust memory long before it reaches the max range
 		// since an enumeration result enumerates one path at a time, the number of 
