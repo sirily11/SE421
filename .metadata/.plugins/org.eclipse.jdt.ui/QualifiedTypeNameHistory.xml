@@ -4,4 +4,5 @@
 <fullyQualifiedTypeName name="com.ensoftcorp.atlas.core.log.Log"/>
 <fullyQualifiedTypeName name="java.util.HashMap"/>
 <fullyQualifiedTypeName name="com.se421.paths.algorithms.PathEnumerator"/>
+<fullyQualifiedTypeName name="com.ensoftcorp.atlas.core.xcsg.XCSG"/>
 </qualifiedTypeNameHistroy>
